@@ -10,4 +10,13 @@
     .rightBottomResponsive{
       margin-top: 15px;
     }
+    .rightBottomResponsiveSmall{
+      padding-top: 6px;
+    }
+  }
+
+  @media (min-width: 1100px){
+    .leftColumnMargined{
+      padding-right: 6%;
+    }
   }
