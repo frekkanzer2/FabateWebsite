@@ -504,6 +504,26 @@ border: 2px solid #fff;
 	text-align: center;
 	float: left;
 }
+@media only screen and (min-width: 480px) and (max-width: 991px){
+	.team-leader-box{
+		width:30.66%;
+		margin-right: 3.82979%;
+		height: 310px;
+		overflow: hidden;
+		text-align: center;
+		float: left;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 660px){
+	.team-leader-box{
+		width:30.66%;
+		margin-right: 3.82979%;
+		height: 270px;
+		overflow: hidden;
+		text-align: center;
+		float: left;
+	}
+}
 .team-leader-box span{
 	margin-bottom:24px;
 	display:block;
