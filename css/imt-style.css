@@ -1,0 +1,19 @@
+.customImtLink{
+    text-decoration: none;
+    color: #7CC576;
+}
+
+.customImtLink:hover{
+    text-decoration: none;
+    color: #7CC576;
+}
+
+.customImtLink:visited{
+    text-decoration: none;
+    color: #7CC576;
+}
+
+.customImtLink:active{
+    text-decoration: none;
+    color: #7CC576;
+}
