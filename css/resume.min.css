@@ -195,3 +195,14 @@
       padding-right: 6%;
     }
   }
+
+  @media (max-width: 555px) and (min-width: 359px){
+    #pageTitle{
+      font-size: 60px;
+      padding-bottom: 0px;
+    }
+    #pageDescription{
+      font-size: 20px;
+      margin-top: -10px;
+    }
+  }
