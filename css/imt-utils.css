@@ -1,0 +1,47 @@
+:root{
+    -clBlack: #000000;
+}
+.text-centered{
+    width: 100%;
+    text-align: center;
+}
+.text-right{
+    width: 100%;
+    text-align: end;
+}
+.text-left{
+    width: 100%;
+    text-align: start;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-italic{
+    font-style: italic;
+}
+.text-diagonal{
+    font-style: oblique;
+}
+.border-rounded-small{
+    border-radius: 3px!important;
+}
+
+.border-rounded-medium{
+    border-radius: 6px!important;
+}
+
+.border-rounded-large{
+    border-radius: 10px!important;
+}
+.border-small{
+    border: 1px solid var(-clBlack)!important;
+}
+.border-medium{
+    border: 3px solid var(-clBlack)!important;
+}
+.border-large{
+    border: 5px solid var(-clBlack)!important;
+}
+.border-extralarge{
+    border: 8px solid var(-clBlack)!important;
+}
