@@ -1,23 +1,39 @@
-.customImtLink{
-    text-decoration: none;
-    color: #7CC576;
+.btn-rose {
+  color: #ffffff;
+  background-color: #823691;
 }
-
-.customImtLink:hover{
-    text-decoration: none;
-    color: #7CC576;
+.btn-rose:hover,
+.btn-rose:focus,
+.btn-rose:active,
+.btn-rose.active,
+.open .dropdown-toggle.btn-rose {
+  color: #ffffff;
+  background-color: #823691;
 }
-
-.customImtLink:visited{
-    text-decoration: none;
-    color: #7CC576;
+.btn-rose:active,
+.btn-rose.active,
+.open .dropdown-toggle.btn-rose {
+  background-image: none;
 }
-
-.customImtLink:active{
-    text-decoration: none;
-    color: #7CC576;
+.btn-rose.disabled,
+.btn-rose[disabled],
+fieldset[disabled] .btn-rose,
+.btn-rose.disabled:hover,
+.btn-rose[disabled]:hover,
+fieldset[disabled] .btn-rose:hover,
+.btn-rose.disabled:focus,
+.btn-rose[disabled]:focus,
+fieldset[disabled] .btn-rose:focus,
+.btn-rose.disabled:active,
+.btn-rose[disabled]:active,
+fieldset[disabled] .btn-rose:active,
+.btn-rose.disabled.active,
+.btn-rose[disabled].active,
+fieldset[disabled] .btn-rose.active {
+  color: #ffffff;
+  background-color: #823691;
 }
-
-.image-games-section{
-    margin-bottom: 10px;
+.btn-rose .badge {
+  color: #ffffff;
+  background-color: #823691;
 }
