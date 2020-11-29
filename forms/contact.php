@@ -5,7 +5,7 @@
         empty($_POST['subject'])     ||
         empty($_POST['message'])   ||
         !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
-        echo "No arguments Provided!";
+        echo "Non hai compilato tutti i campi";
         return false;
     }
     
@@ -17,7 +17,7 @@
     // Create the email and send the message
     $to = 'abatefrancesco98@gmail.com';
     $email_subject = "Fabate Website new message > $subject";
-    $email_body = "Hi Francesco, you received a new message from the contact form on www.fabate.altervista.org\n\n".">>> MESSAGE DETAILS <<<\n\n***************************\n\n$subject\nfrom $name <$email_address>\n\nMessage:\n$message\n\n---\n\nwww.fabate.altervista.org";
+    $email_body = "Hi Francesco, you received a new message from the contact form on www.fabate.altervista.org\n\n"."*****************************************\n\n$subject\nfrom $name :: <$email_address>\n\n$message\n\nwww.fabate.altervista.org\n\n*****************************************";
     $headers = "From: noreply@fabate.altervista.org\n";
     $headers .= "Reply-To: $email_address";   
     mail($to,$email_subject,$email_body,$headers);
