@@ -105,9 +105,22 @@
       return false;
     }
     
-    this_form.find('.sent-message').slideUp();
-    this_form.find('.error-message').slideUp();
-    this_form.find('.loading').slideDown();
+    if ($(".php-email-form").find('.input-name').val() == '' ||
+    $(".php-email-form").find('.input-email').val() == '' ||
+    $(".php-email-form").find('.input-subject').val() == ''||
+    $(".php-email-form").find('.input-message').val() == '') {
+      // Showing loading text
+      this_form.find('.sent-message').slideUp();
+      this_form.find('.error-message').text("Non hai completato tutti i campi!");
+      this_form.find('.error-message').slideDown();
+      this_form.find('.loading').slideUp();
+    } else {
+      // Showing loading text
+      this_form.find('.sent-message').slideUp();
+      this_form.find('.error-message').slideUp();
+      this_form.find('.loading').text("Caricamento");
+      this_form.find('.loading').slideDown();
+    }
 
     if ( $(this).data('recaptcha-site-key') ) {
       var recaptcha_site_key = $(this).data('recaptcha-site-key');
@@ -133,7 +146,13 @@
       if (msg.trim() == '') {
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
+        this_form.find('.error-message').slideUp();
+        this_form.find('.sent-message').text("Messaggio inviato con successo!");
         this_form.find("input:not(input[type=submit]), textarea").val('');
+        $(".php-email-form").find('.input-name').val("");
+        $(".php-email-form").find('.input-email').val("");
+        $(".php-email-form").find('.input-subject').val("");
+        $(".php-email-form").find('.input-message').val("");
       }
     });
   }

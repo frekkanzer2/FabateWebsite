@@ -116,7 +116,7 @@
       <div class="w-100">
         <h2 class="mb-5"></h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-item flex-md-row justify-content-between mb-5 contactPanel">
           <div class="resume-content">
             <h2 class="mb-0">Contatti</h2>
 
@@ -130,7 +130,7 @@
               
               <div id="map-container-google-1" class="z-depth-1-half map-container" style="margin-bottom: 60px;">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7193.216484870829!2d14.707092630796069!3d40.70976106260335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bc11e8fad5b11%3A0xa3cb9f3aab722bd4!2sVia%20Luigi%20Ferrara%2C%2026%2C%2084013%20Cava%20de&#39;%20Tirreni%20SA!5e0!3m2!1sit!2sit!4v1606652223967!5m2!1sit!2sit"
-                width = "100%" height = "300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                width = "100%" height = "400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
 
             </div>
@@ -143,28 +143,28 @@
                   <div class="col-sm">
                     <div class="form-group">
                       <div class="subheading mb-1">Il tuo nome</div>
-                      <input type="text" class="form-control" max=50 name="name">
+                      <input type="text" class="form-control input-name" min=3 max=50 name="name">
                     </div>
                   </div>
                   <div class="col-sm">
                     <div class="form-group">
                       <div class="subheading mb-1">La tua email</div>
-                      <input type="email" class="form-control" max=50 name="email">
+                      <input type="email" class="form-control input-email" min=5 max=50 name="email">
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="subheading mb-1">Oggetto</div>
-                  <input type="text" class="form-control" max=50 name="subject">
+                  <input type="text" class="form-control input-subject" min=5 max=50 name="subject">
                 </div>
                 <div class="form-group" style="margin-bottom: 24px;">
                   <div class="subheading mb-1">Messaggio</div>
-                  <textarea class="form-control" rows="5" name="message"></textarea>
+                  <textarea class="form-control input-message" rows="7" name="message"></textarea>
                 </div>
                 <div class="mb-3">
-                  <div class="loading" style="color: #a666b3;">Caricamento</div>
+                  <div class="loading" style="color: #a666b3;"></div>
                   <div class="error-message" style="color: #823691;"></div>
-                  <div class="sent-message" style="color: #823691;">Messaggio inviato con successo!</div>
+                  <div class="sent-message" style="color: #823691;"></div>
                 </div>
                 <button type="submit" class="btn btn-rose" style = "width: 100%;">
                   <i class="fas fa-paper-plane"></i>
