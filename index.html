@@ -270,11 +270,11 @@
               <h3 class="mb-0">Full Stack Mobile Developer</h3>
               <div class="subheading mb-3">Softlab</div>
               <p>Realizzazione di un'applicazione Android utile al contrasto del bullismo in collaborazione con l'azienda Softlab.
-                Lo sviluppo dell'app sta attualmente migliorando le mie conoscenze nell'ambito della progettazione software, raffinando 
+                Lo sviluppo dell'app ha migliorato le mie conoscenze nell'ambito della progettazione software, raffinando 
                 i contenuti dei deliverables che si prevedono in tale fase. Riguardo l'aspetto implementativo, il progetto utilizza Flutter per il 
                 frontend e NodeJS per il backend. Inoltre, l'applicazione fa uso di un bot con cui l'utente può interagire segnalando episodi di bullismo
                 o di generale aggressione: il bot risponderà con frasi di conforto e suggerirà di parlare con uno psicologo nel caso la situazione
-                non sia da sottovalutare. Il bot è stato realizzato con DialogFlow, funziona con 16 intent ed è stato allenato tramite circa 620 frasi 
+                non sia da sottovalutare. Il bot è stato realizzato con DialogFlow, funziona con 16 intent ed è stato allenato tramite circa 650 frasi 
                 complessive.</p>
             </div>
             <div class="resume-date text-md-right">
@@ -716,105 +716,112 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="w-100">
-        <h2 class="mb-5">Progetti e lavori</h2>
-        <hr/>
-        
+        <h2 class="mb-5" style="margin-bottom: 6px!important;">Progetti e lavori</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content" style="width: 100%;">
-            <h2 class="mb-2" style="margin-top: 20px;">Videogiochi</h2>
+        <ul id="app-selection" class="list-group list-group-horizontal">
+          <a href="#projects"><li class="list-group-item app-category">Videogiochi</li></a>
+          <a href="#projects"><li class="list-group-item app-category">Applicativi</li></a>
+          <a href="#projects"><li class="list-group-item app-category">Web App</li></a>
+          <a href="#projects"><li class="list-group-item app-category">Prototipi</li></a>
+        </ul>
 
-            <!-- CAROUSEL STARTS HERE -->
-            <div id="vgCarousel" class="carousel slide" data-ride="carousel" style="width: 100%!important;">
-              <ol class="carousel-indicators">
-                <li data-target="#vgCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#vgCarousel" data-slide-to="1"></li>
-                <li data-target="#vgCarousel" data-slide-to="2"></li>
-                <li data-target="#vgCarousel" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner" style="width: 100%!important;">
-                <!-- Dungate image -->
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="./img/carousel/game_dungate.png" alt="Dungate image" width="1028!important" height="564!important">
+        <!--  VIDEOGAMES SECTION  -->
+        <div id="app-videogames" style="display: none;">
+          <hr style = "margin-top: 48px!important;">
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content" style="width: 100%;">
+              <h2 class="mb-2" style="margin-top: 20px;">Videogiochi</h2>
+
+              <!-- CAROUSEL STARTS HERE -->
+              <div id="vgCarousel" class="carousel slide" data-ride="carousel" style="width: 100%!important;">
+                <ol class="carousel-indicators">
+                  <li data-target="#vgCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#vgCarousel" data-slide-to="1"></li>
+                  <li data-target="#vgCarousel" data-slide-to="2"></li>
+                  <li data-target="#vgCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" style="width: 100%!important;">
+                  <!-- Dungate image -->
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/carousel/game_dungate.png" alt="Dungate image" width="1028!important">
+                  </div>
+                  <!-- Faction Wars image -->
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/carousel/game_factionwars.png" alt="Faction Wars image" width="1028!important">
+                  </div>
+                  <!-- House Runner image -->
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/carousel/game_houserunner.png" alt="House Runner image" width="1028!important">
+                  </div>
+                  <!-- Brawl Arena image -->
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/carousel/game_brawlarena.png" alt="Brawl Arena image" width="1028!important">
+                  </div>
                 </div>
-                <!-- Faction Wars image -->
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./img/carousel/game_factionwars.png" alt="Faction Wars image" width="1028!important" height="564!important">
+                <a class="carousel-control-prev" href="#vgCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#vgCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!-- CAROUSEL ENDS HERE -->
+              
+              
+              <div class="container">
+                <div class="row">
+                  <div class ="col-lg-12">
+                    <div id="project_title" class="subheading"></div>
+                    <div id="project_subtitle" class="subheading mb-2"></div>
+                  </div>
                 </div>
-                <!-- House Runner image -->
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./img/carousel/game_houserunner.png" alt="House Runner image" width="1028!important" height="564!important">
-                </div>
-                <!-- Brawl Arena image -->
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./img/carousel/game_brawlarena.png" alt="Brawl Arena image" width="1028!important" height="564!important">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div id="label_authors" class="subheading mb-2" style="font-size: 32px; color: #343A40;">AUTORI</div>
+                    <div id="project_authors">
+                      
+                    </div>
+                    <div id="label_publisher" class="subheading mb-2" style="font-size: 32px; color: #343A40;">PUBLISHER</div>
+                    <div id="project_publisher">
+                      
+                    </div>
+                    <div id="label_details" class="subheading mb-2" style="font-size: 32px; color: #343A40;">DETTAGLI</div>
+                    <!-- List of gamemodes -->
+                    <div id="project_details">
+                      <!--
+                              Icons for details
+                              Giocatore singolo: fa-li fas fa-user
+                              Schermo condiviso: fa-li fas fa-desktop
+                              Multigiocatore: fa-li fas fa-users
+                              Multipiattaforma: fa-li fas fa-network-wired
+                              Tastiera necessaria: fa-li fas fa-keyboard
+                              Controller necessario: fa-li fas fa-gamepad
+                              Controller opzionale: fa-li fas fa-gamepad
+                              Salvataggio in cloud: fa-li fas fa-cloud
+                              Salvataggio locale: fa-li fas fa-database
+                              Classifica: fa-li fas fa-medal
+                              Obiettivi: fa-li fas fa-star
+                              Internet richiesto: fa-li fas fa-wifi
+                      -->
+                      
+                    </div>
+                    <div id="label_links" class="subheading mb-2" style="font-size: 32px; color: #343A40; margin-top: 8px;">LINK UTILI</div>
+                    <div id="project_links">
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div id="label_description" class="subheading mb-2" style="font-size: 32px; color: #343A40;">RIGUARDO IL GIOCO</div>
+                    <!-- Description -->
+                    <div id="project_description">
+                    </div>
+                  </div>
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#vgCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#vgCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+
+
             </div>
-            <!-- CAROUSEL ENDS HERE -->
-            
-            
-            <div class="container">
-              <div class="row">
-                <div class ="col-lg-12">
-                  <div id="project_title" class="subheading"></div>
-                  <div id="project_subtitle" class="subheading mb-2"></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="subheading mb-2" style="font-size: 32px; color: #343A40;">AUTORI</div>
-                  <div id="project_authors">
-                    
-                  </div>
-                  <div class="subheading mb-2" style="font-size: 32px; color: #343A40;">PUBLISHER</div>
-                  <div id="project_publisher">
-                    
-                  </div>
-                  <div class="subheading mb-2" style="font-size: 32px; color: #343A40;">DETTAGLI</div>
-                  <!-- List of gamemodes -->
-                  <div id="project_details">
-                    <!--
-                            Icons for details
-                            Giocatore singolo: fa-li fas fa-user
-                            Schermo condiviso: fa-li fas fa-desktop
-                            Multigiocatore: fa-li fas fa-users
-                            Multipiattaforma: fa-li fas fa-network-wired
-                            Tastiera necessaria: fa-li fas fa-keyboard
-                            Controller necessario: fa-li fas fa-gamepad
-                            Controller opzionale: fa-li fas fa-gamepad
-                            Salvataggio in cloud: fa-li fas fa-cloud
-                            Salvataggio locale: fa-li fas fa-database
-                            Classifica: fa-li fas fa-medal
-                            Obiettivi: fa-li fas fa-star
-                            Internet richiesto: fa-li fas fa-wifi
-                    -->
-                    
-                  </div>
-                  <div class="subheading mb-2" style="font-size: 32px; color: #343A40; margin-top: 8px;">LINK UTILI</div>
-                  <div id="project_links">
-                    
-                  </div>
-                </div>
-                <div class="col-lg-8">
-                  <div class="subheading mb-2" style="font-size: 32px; color: #343A40;">RIGUARDO IL GIOCO</div>
-                  <!-- Description -->
-                  <div id="project_description">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
           </div>
         </div>
         
@@ -835,12 +842,14 @@
       gameAuthors = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Francesco Abate</li><li>Carmine Ferrara</li></ul>";
       gamePublisher = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Overriders Group (Android)</li><li>IMTech (Windows)</li></ul>"
       gameDetails = "<ul class='fa-ul mb-0' style='padding: 0px!important; margin-left: 24px!important;'> <li> <div class='fa-li fas fa-users'></div> <div style='padding-left:3px'>Multigiocatore (1-4)</div> </li> <li> <div class='fa-li fas fa-network-wired'></div> <div style='padding-left:3px'>Multipiattaforma</div> </li> <li> <div class='fa-li fas fa-gamepad'></div> <div style='padding-left:3px'>Controller necessario</div> </li> <li> <div class='fa-li fas fa-cloud'></div> <div style='padding-left:3px'>Salvataggio in cloud</div> </li> <li> <div class='fa-li fas fa-wifi'></div> <div style='padding-left:3px'>Internet richiesto</div> </li> </ul>";
+      gameLinks = "<ul style='padding: 0px!important; padding-left: 20px!important;'> <li> <a href='https://youtu.be/1fJmCYvvsHk' target='_blank'>Announcement trailer</a> </li> </ul>";
       document.getElementById("project_title").innerHTML = gameTitle;
       document.getElementById("project_subtitle").innerHTML = gameSubtitle;
       document.getElementById("project_description").innerHTML = gameDescription;
       document.getElementById("project_authors").innerHTML = gameAuthors;
       document.getElementById("project_publisher").innerHTML = gamePublisher;
       document.getElementById("project_details").innerHTML = gameDetails;
+      document.getElementById("project_links").innerHTML = gameLinks;
     };
 
   </script>
