@@ -17,6 +17,9 @@ $("li.app-category").click(function(){
         // Show videogames section
         console.log("Selected " + text + " section");
         $("#app-videogames").slideUp(400);
+    } else if (text.localeCompare("Prossimamente") == 0) {
+        // Show videogames section
+        $("#app-videogames").slideUp(400);
     }
 });
 
