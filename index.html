@@ -5,11 +5,11 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Tutte le informazioni riguardo il vostro programmatore di fiducia.">
+  <meta name="description" content="Francesco Abate | Software Engineer | Sviluppatore Unity | Tutte le informazioni sul vostro sviluppatore di fiducia">
   <meta name="author" content="Francesco Abate">
-  <meta name="keywords" content="francesco abate, programmatore, programmer, gamer, lezioni private, curriculum, sito, creatore di videogiochi, videogiochi, sviluppatore, game developer, unity">
+  <meta name="keywords" content="francesco abate, francesco, abate, curriculum, unisa, informatica, magistrale, dottore, programmatore, programmer, gamer, lezioni private, curriculum, sito, creatore di videogiochi, videogiochi, sviluppatore, game developer, unity, game, dev, lezioni, ripetizioni">
 
-  <title>Francesco Abate</title>
+  <title>Francesco Abate - Software Engineer</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -98,6 +98,9 @@
           <a href="https://steamcommunity.com/id/dgiyopsmortal" class="btnHomeContact">
             <i class="fab fa-steam"></i>
           </a>
+          <a href="https://www.facebook.com/IyopsMortal" class="btnHomeContact">
+            <i class="fab fa-facebook"></i>
+          </a>
           <a href="https://www.instagram.com/im.abbee_/" class="btnHomeContact">
             <i class="fab fa-instagram"></i>
           </a>
@@ -122,11 +125,11 @@
 
         <ul id="app-selection" class="list-group list-group-horizontal">
           <a href="#projects" style="text-decoration:none;"><li class="list-group-item app-category">Videogiochi</li></a>
+          <a href="#projects" style="text-decoration:none;"><li class="list-group-item app-category">Applicativi</li></a>
           <a href="#projects" style="text-decoration:none;"><li class="list-group-item app-category">Prossimamente</li></a>
           <!-- PROSSIMAMENTE
-          <a href="#projects" style="text-decoration:none;"><li class="list-group-item app-category">Applicativi</li></a>
-          <a href="#projects" style="text-decoration:none;"><li class="list-group-item app-category">Web App</li></a>
-          <a href="#projects" style="text-decoration:none;"><li class="list-group-item app-category">Prototipi</li></a>
+          <a href="#projects" style="text-decoration:none;"><li class="list-group-item app-category">Sviluppo web</li></a>
+          <a href="#projects" style="text-decoration:none;"><li class="list-group-item app-category">Altro</li></a>
           -->
         </ul>
 
@@ -178,23 +181,23 @@
               <div class="container">
                 <div class="row">
                   <div class ="col-lg-12">
-                    <div id="project_title" class="subheading"></div>
-                    <div id="project_subtitle" class="subheading mb-2"></div>
+                    <div id="project_title" class="subheading style_project_title"></div>
+                    <div id="project_subtitle" class="subheading mb-2 style_project_subtitle"></div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-lg-4">
-                    <div id="label_authors" class="subheading mb-2" style="font-size: 32px; color: #343A40;">AUTORI</div>
-                    <div id="project_authors">
+                    <div id="label_authors" class="subheading mb-2 style_label_authors" style="font-size: 32px; color: #343A40;">AUTORI</div>
+                    <div id="project_authors" class="style_project_authors">
                       
                     </div>
-                    <div id="label_publisher" class="subheading mb-2" style="font-size: 32px; color: #343A40;">PUBLISHER</div>
-                    <div id="project_publisher">
+                    <div id="label_publisher" class="subheading mb-2 style_label_publisher" style="font-size: 32px; color: #343A40;">PUBLISHER</div>
+                    <div id="project_publisher" class="style_project_publisher">
                       
                     </div>
-                    <div id="label_details" class="subheading mb-2" style="font-size: 32px; color: #343A40;">DETTAGLI</div>
+                    <div id="label_details" class="subheading mb-2 style_label_details" style="font-size: 32px; color: #343A40;">DETTAGLI</div>
                     <!-- List of gamemodes -->
-                    <div id="project_details">
+                    <div id="project_details" class = "style_project_details">
                       <!--
                               Icons for details
                               Giocatore singolo: fa-li fas fa-user
@@ -212,14 +215,14 @@
                       -->
                       
                     </div>
-                    <div id="label_links" class="subheading mb-2" style="font-size: 32px; color: #343A40; margin-top: 8px;">LINK UTILI</div>
-                    <div id="project_links">
+                    <div id="label_links" class="subheading mb-2 style_label_links" style="font-size: 32px; color: #343A40; margin-top: 8px;">LINK UTILI</div>
+                    <div id="project_links" class="style_project_links">
                     </div>
                   </div>
                   <div class="col-lg-8">
-                    <div id="label_description" class="subheading mb-2" style="font-size: 32px; color: #343A40;">RIGUARDO IL GIOCO</div>
+                    <div id="label_description" class="subheading mb-2 style_label_description" style="font-size: 32px; color: #343A40;">RIGUARDO IL GIOCO</div>
                     <!-- Description -->
-                    <div id="project_description">
+                    <div id="project_description" class = "style_project_description">
                     </div>
                   </div>
                 </div>
@@ -230,6 +233,85 @@
           </div>
         </div>
         
+        <!-- APPS SECTION -->
+        <div id="app-applications" style="display: none;">
+          <hr style = "margin-top: 48px!important;">
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content" style="width: 100%;">
+              <h2 class="mb-2" style="margin-top: 20px;">Applicativi</h2>
+
+              <!-- CAROUSEL STARTS HERE -->
+              <div id="appCarousel" class="carousel slide" data-ride="carousel" style="width: 100%!important;">
+                <ol class="carousel-indicators">
+                  <li data-target="#appCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#appCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" style="width: 100%!important;">
+                  <!-- Keymaster image -->
+                  <div class="carousel-item item-app active">
+                    <img class="d-block w-100" src="./img/carousel/app_keymaster.png" alt="Keymaster image" width="1028!important">
+                  </div>
+                  <!-- Data Reporter image -->
+                  <div class="carousel-item item-app">
+                    <img class="d-block w-100" src="./img/carousel/app_datareporter.png" alt="Data Reporter image" width="1028!important">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#appCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#appCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!-- CAROUSEL ENDS HERE -->
+              
+              <div class="container">
+                <div class="row">
+                  <div class ="col-lg-12">
+                    <div id="app_project_title" class="subheading style_project_title"></div>
+                    <div id="app_project_subtitle" class="subheading mb-2 style_project_subtitle"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div id="app_label_authors" class="subheading mb-2 style_label_authors" style="font-size: 32px; color: #343A40;">AUTORI</div>
+                    <div id="app_project_authors" class="style_project_authors">
+                      
+                    </div>
+                    <div id="app_label_publisher" class="subheading mb-2 style_label_publisher" style="font-size: 32px; color: #343A40;">PUBLISHER</div>
+                    <div id="app_project_publisher" class="style_project_publisher">
+                      
+                    </div>
+                    <div id="app_label_details" class="subheading mb-2 style_label_details" style="font-size: 32px; color: #343A40;">DETTAGLI</div>
+                    <!-- List of gamemodes -->
+                    <div id="app_project_details" class = "style_project_details">
+                      <!--
+                              Icons for details
+                              Internet richiesto: fa-li fas fa-wifi
+                              Accesso alla memoria: fa-li fas fa-sd-card
+                              Nessun permesso: fa-li fas fa-times
+                      -->
+                    </div>
+                    <div id="app_label_links" class="subheading mb-2 style_label_links" style="font-size: 32px; color: #343A40; margin-top: 8px;">LINK UTILI</div>
+                    <div id="app_project_links" class="style_project_links">
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div id="app_label_description" class="subheading mb-2 style_label_description" style="font-size: 32px; color: #343A40;">RIGUARDO L'APPLICAZIONE</div>
+                    <!-- Description -->
+                    <div id="app_project_description" class="style_project_description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -509,12 +591,12 @@
             <li>
               <div class="fa-li fa fa-terminal"></div>
               <div style="padding-left:6px"><b>Buone conoscenze</b></div>
-              <div style="padding-left:6px">Dart, Python, Flutter, SQL, Mirror Networking, ML-Agents Toolkit, Unity IAP, Unity Ads, DialogFlow, HTML, CSS, Bootstrap</div>
+              <div style="padding-left:6px">Dart, Python, Flutter, SQL, JavaScript, Mirror Networking, ML-Agents Toolkit, Unity IAP, Unity Ads, DialogFlow, HTML, CSS, Bootstrap</div>
             </li>
             <li>
               <div class="fa-li fa fa-terminal"></div>
               <div style="padding-left:6px"><b>Medie conoscenze</b></div>
-              <div style="padding-left:6px">Java EE, C, R, NodeJS, JavaScript</div>
+              <div style="padding-left:6px">Java EE, C, R, NodeJS</div>
             </li>
             <li>
               <div class="fa-li fa fa-terminal"></div>
@@ -846,20 +928,34 @@
       $(".loading").slideUp();
       $(".sent-message").slideUp();
       $(".error-message").slideUp();
-      gameTitle = "DUNGATE: ZOMBIE SURVIVAL";
-      gameSubtitle = "Data di rilascio prevista: 2021/2022 · Sviluppo in corso (60%)&nbsp;&nbsp;-&nbsp;&nbsp;Windows · Android";
-      gameDescription = "Resisti e sconfiggi i non morti in Dungate.<br/>Quanto riuscirai a sopravvivere in un mondo invaso da zombie?<br/><br/><b>DUNGATE: ZOMBIE SURVIVAL</b><br/>Una piccola colonia di sopravvissuti mantiene resistenza ai mostri riparandosi in una caverna misteriosa, caratterizzata da un portale infernale capace di teletrasportare gli esseri umani in diverse zone della terra.<br/>Attraversa il portale e stermina le orde di nemici che invaderanno la zona in cui ti trovi con un vasto e potente arsenale a tua disposizione!<br/><br/><b>INVASIONE DI ZOMBIE</b><br/>Arriveranno orde di nemici, sempre più numerosi e potenti, resuscitati da cerchi infernali.<br/>Resisti all'avanzata dei non morti, raccogli potenti armi e rifornisciti di munizioni: sei pronto per scatenare l'inferno. Corridori, infetti, demoni e stregoni ti daranno la caccia, ma li abbatterai tutti con colpi di fucile.<br/><br/><b>COOPERAZIONE</b><br/>Sterminare orde di mutanti e demoni è difficile e rischioso: meglio portare con sé altri soldati! Resisti all'invasione con i tuoi amici, cooperando e resistendo insieme. Proteggi i tuoi alleati e aiutali a sconfiggere la mandria di mutanti che resusciterà dalla terra.<br/><br/><b>COSA TI ASPETTA</b><br/><ul style='padding: 0px!important; padding-left: 20px!important;'><li>Un fantastico gioco pieno di azione, zombie, mutanti, demoni, sangue, esplosioni e chi più ne ha, più ne metta</li><li>Tantissimi mostri ti attendono nelle zone del portale, inferociti e pronti a divorarti</li><li>Un vasto arsenale di armi, con il quale massacrerai le orde che cercheranno di assalirti</li><li>Cooperazione con i tuoi alleati, in modo da resistere a quante più orde possibili</li><li>Potenziamenti e abbigliamenti per il tuo personaggio</li><li>Cross Platform tra Android e Windows</li></ul>";
-      gameAuthors = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Francesco Abate</li><li>Carmine Ferrara</li></ul>";
-      gamePublisher = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Overriders Group (Android)</li><li>IMTech (Windows)</li></ul>"
-      gameDetails = "<ul class='fa-ul mb-0' style='padding: 0px!important; margin-left: 24px!important;'> <li> <div class='fa-li fas fa-users'></div> <div style='padding-left:3px'>Multigiocatore (1-4)</div> </li> <li> <div class='fa-li fas fa-network-wired'></div> <div style='padding-left:3px'>Multipiattaforma</div> </li> <li> <div class='fa-li fas fa-gamepad'></div> <div style='padding-left:3px'>Controller necessario</div> </li> <li> <div class='fa-li fas fa-cloud'></div> <div style='padding-left:3px'>Salvataggio in cloud</div> </li> <li> <div class='fa-li fas fa-wifi'></div> <div style='padding-left:3px'>Internet richiesto</div> </li> </ul>";
-      gameLinks = "<ul style='padding: 0px!important; padding-left: 20px!important;'> <li> <a href='https://youtu.be/1fJmCYvvsHk' target='_blank'>Announcement trailer</a> </li> </ul>";
-      document.getElementById("project_title").innerHTML = gameTitle;
-      document.getElementById("project_subtitle").innerHTML = gameSubtitle;
-      document.getElementById("project_description").innerHTML = gameDescription;
-      document.getElementById("project_authors").innerHTML = gameAuthors;
-      document.getElementById("project_publisher").innerHTML = gamePublisher;
-      document.getElementById("project_details").innerHTML = gameDetails;
-      document.getElementById("project_links").innerHTML = gameLinks;
+      title = "DUNGATE: ZOMBIE SURVIVAL";
+      subtitle = "Data di rilascio prevista: 2021/2022 · Sviluppo in corso (60%)&nbsp;&nbsp;-&nbsp;&nbsp;Windows · Android";
+      description = "Resisti e sconfiggi i non morti in Dungate.<br/>Quanto riuscirai a sopravvivere in un mondo invaso da zombie?<br/><br/><b>DUNGATE: ZOMBIE SURVIVAL</b><br/>Una piccola colonia di sopravvissuti mantiene resistenza ai mostri riparandosi in una caverna misteriosa, caratterizzata da un portale infernale capace di teletrasportare gli esseri umani in diverse zone della terra.<br/>Attraversa il portale e stermina le orde di nemici che invaderanno la zona in cui ti trovi con un vasto e potente arsenale a tua disposizione!<br/><br/><b>INVASIONE DI ZOMBIE</b><br/>Arriveranno orde di nemici, sempre più numerosi e potenti, resuscitati da cerchi infernali.<br/>Resisti all'avanzata dei non morti, raccogli potenti armi e rifornisciti di munizioni: sei pronto per scatenare l'inferno. Corridori, infetti, demoni e stregoni ti daranno la caccia, ma li abbatterai tutti con colpi di fucile.<br/><br/><b>COOPERAZIONE</b><br/>Sterminare orde di mutanti e demoni è difficile e rischioso: meglio portare con sé altri soldati! Resisti all'invasione con i tuoi amici, cooperando e resistendo insieme. Proteggi i tuoi alleati e aiutali a sconfiggere la mandria di mutanti che resusciterà dalla terra.<br/><br/><b>COSA TI ASPETTA</b><br/><ul style='padding: 0px!important; padding-left: 20px!important;'><li>Un fantastico gioco pieno di azione, zombie, mutanti, demoni, sangue, esplosioni e chi più ne ha, più ne metta</li><li>Tantissimi mostri ti attendono nelle zone del portale, inferociti e pronti a divorarti</li><li>Un vasto arsenale di armi, con il quale massacrerai le orde che cercheranno di assalirti</li><li>Cooperazione con i tuoi alleati, in modo da resistere a quante più orde possibili</li><li>Potenziamenti e abbigliamenti per il tuo personaggio</li><li>Cross Platform tra Android e Windows</li></ul>";
+      authors = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Francesco Abate</li><li>Carmine Ferrara</li></ul>";
+      publisher = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Overriders Group (Android)</li><li>IMTech (Windows)</li></ul>";
+      details = "<ul class='fa-ul mb-0' style='padding: 0px!important; margin-left: 24px!important;'> <li> <div class='fa-li fas fa-users'></div> <div style='padding-left:3px'>Multigiocatore (1-4)</div> </li> <li> <div class='fa-li fas fa-network-wired'></div> <div style='padding-left:3px'>Multipiattaforma</div> </li> <li> <div class='fa-li fas fa-gamepad'></div> <div style='padding-left:3px'>Controller necessario</div> </li> <li> <div class='fa-li fas fa-cloud'></div> <div style='padding-left:3px'>Salvataggio in cloud</div> </li> <li> <div class='fa-li fas fa-wifi'></div> <div style='padding-left:3px'>Internet richiesto</div> </li> </ul>";
+      links = "<ul style='padding: 0px!important; padding-left: 20px!important;'> <li> <a href='https://youtu.be/1fJmCYvvsHk' target='_blank'>Announcement trailer</a> </li> </ul>";
+      document.getElementById("project_title").innerHTML = title;
+      document.getElementById("project_subtitle").innerHTML = subtitle;
+      document.getElementById("project_description").innerHTML = description;
+      document.getElementById("project_authors").innerHTML = authors;
+      document.getElementById("project_publisher").innerHTML = publisher;
+      document.getElementById("project_details").innerHTML = details;
+      document.getElementById("project_links").innerHTML = links;
+      title = "KEYMASTER: PASSWORD MANAGER GRATUITO";
+      subtitle = "Data di rilascio: 2021 · Android";
+      description = "<b>Keymaster</b> è il perfetto password manager per archiviare account e pin importanti. Applicazione totalmente offline, non richiede nemmeno il minimo accesso ad Internet, protegge i tuoi dati e li rende inaccessibili dall'esterno.<br/><br/><b>Semplice e minimale</b>: carica i tuoi account sull'applicazione e accedici tramite un semplice pin segreto, il quale sarà strettamente personale!<br/><br/><b>Il tuo archivio personale</b>: Keymaster permette la memorizzazione di un numero illimitato di account.<br/><br/><b>Pulizia immediata</b>: basta una semplice disinstallazione per rimuovere tutte le password conservate. La disinstallazione non lascia alcuna traccia sul cellulare.<br/><br/><b>Totalmente gratuito</b>, creato per la comunità con amore.";
+      authors = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Francesco Abate</li></ul>";
+      publisher = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Overriders Group</li></ul>";
+      details = "<ul class='fa-ul mb-0' style='padding: 0px!important; margin-left: 24px!important;'> <li> <div class='fa-li fas fa-sd-card'></div> <div style='padding-left:3px'>Accesso alla memoria</div> </li> </ul>";
+      links = "<ul style='padding: 0px!important; padding-left: 20px!important;'> <li> <a href='https://play.google.com/store/apps/details?id=com.OverridersGroup.keymaster&hl=it&gl=US' target='_blank'>Download</a> </li> </ul>";
+      document.getElementById("app_project_title").innerHTML = title;
+      document.getElementById("app_project_subtitle").innerHTML = subtitle;
+      document.getElementById("app_project_description").innerHTML = description;
+      document.getElementById("app_project_authors").innerHTML = authors;
+      document.getElementById("app_project_publisher").innerHTML = publisher;
+      document.getElementById("app_project_details").innerHTML = details;
+      document.getElementById("app_project_links").innerHTML = links;
     };
 
   </script>

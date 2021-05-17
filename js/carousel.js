@@ -4,22 +4,27 @@ $("li.app-category").click(function(){
     if (text.localeCompare("Videogiochi") == 0) {
         // Show videogames section
         console.log("Selected " + text + " section");
+        $("#app-applications").slideUp(400);
         $("#app-videogames").slideToggle(1000);
     } else if (text.localeCompare("Applicativi") == 0) {
         // Show videogames section
         console.log("Selected " + text + " section");
         $("#app-videogames").slideUp(400);
+        $("#app-applications").slideToggle(1000);
     } else if (text.localeCompare("Web App") == 0) {
         // Show videogames section
         console.log("Selected " + text + " section");
         $("#app-videogames").slideUp(400);
+        $("#app-applications").slideUp(400);
     } else if (text.localeCompare("Prototipi") == 0) {
         // Show videogames section
         console.log("Selected " + text + " section");
         $("#app-videogames").slideUp(400);
+        $("#app-applications").slideUp(400);
     } else if (text.localeCompare("Prossimamente") == 0) {
         // Show videogames section
         $("#app-videogames").slideUp(400);
+        $("#app-applications").slideUp(400);
     }
 });
 
@@ -28,14 +33,7 @@ $('.carousel').carousel({
 })
 
 $('#vgCarousel').on('slid.bs.carousel', function() {
-    currentIndex = $('div.active').index(); //Getting carousel current index
-    gameTitle = "";
-    gameSubtitle = "";
-    gameDescription = "";
-    gameAuthors = "";
-    gamePublisher = "";
-    gameDetails = "";
-    gameLinks = "";
+    currentIndex = $('.carousel-item.active').index(); //Getting carousel current index
     switch(currentIndex) {
         case 0:
             gameTitle = "DUNGATE: ZOMBIE SURVIVAL";
@@ -83,3 +81,51 @@ $('#vgCarousel').on('slid.bs.carousel', function() {
     document.getElementById("project_links").innerHTML = gameLinks;
 
 });
+
+$('#appCarousel').on('slid.bs.carousel', function() {
+    currentIndex = $('.carousel-item.item-app.active').index(); //Getting carousel current index
+    console.log("Switching to " + currentIndex);
+    switch(currentIndex) {
+        case 0:
+            appTitle = "KEYMASTER: PASSWORD MANAGER GRATUITO";
+            appSubtitle = "Data di rilascio: 2021 · Android";
+            appDescription = "<b>Keymaster</b> è il perfetto password manager per archiviare account e pin importanti. Applicazione totalmente offline, non richiede nemmeno il minimo accesso ad Internet, protegge i tuoi dati e li rende inaccessibili dall'esterno.<br/><br/><b>Semplice e minimale</b>: carica i tuoi account sull'applicazione e accedici tramite un semplice pin segreto, il quale sarà strettamente personale!<br/><br/><b>Il tuo archivio personale</b>: Keymaster permette la memorizzazione di un numero illimitato di account.<br/><br/><b>Pulizia immediata</b>: basta una semplice disinstallazione per rimuovere tutte le password conservate. La disinstallazione non lascia alcuna traccia sul cellulare.<br/><br/><b>Totalmente gratuito</b>, creato per la comunità con amore.";
+            appAuthors = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Francesco Abate</li></ul>";
+            appPublisher = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Overriders Group</li></ul>";
+            appDetails = "<ul class='fa-ul mb-0' style='padding: 0px!important; margin-left: 24px!important;'> <li> <div class='fa-li fas fa-sd-card'></div> <div style='padding-left:3px'>Accesso alla memoria</div> </li> </ul>";
+            appLinks = "<ul style='padding: 0px!important; padding-left: 20px!important;'> <li> <a href='https://play.google.com/store/apps/details?id=com.OverridersGroup.keymaster&hl=it&gl=US' target='_blank'>Download</a> </li> </ul>";
+            break;
+        case 1:
+            appTitle = "DATA REPORTER (COVID19 APP)";
+            appSubtitle = "Data di rilascio: 2020 · Android";
+            appDescription = "<b>Data Reporter</b> mostra dati inerenti all'infezione da Covid19 per ogni nazione del mondo.<br/><br/>Basta selezionare una nazione dall'elenco nella home per visualizzare diversi dati statistici<br/><br/><b>Come è nato Data Reporter</b><br/>Data Reporter nasce praticamente nelle prime settimane della pandemia, sviluppata in Java come allenamento per un'esame universitario. Data Reporter non fa altro che ricavare dati da WorldOMeter, servizio offrente dati statistici gratuitamente, e mostrarli su schermo senza dover cercare e visitare l'apposita pagina web.<br/><br/>L'applicazione non è presente sul Play Store siccome Google non accetta applicativi che offrano informazioni circa l'infezione Covid19.";
+            appAuthors = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Francesco Abate</li><li>Simone Auriemma</li><li>Valentina Fiorillo</li></ul>";
+            appPublisher = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Overriders Group</li></ul>";
+            appDetails = "<ul class='fa-ul mb-0' style='padding: 0px!important; margin-left: 24px!important;'> <li> <div class='fa-li fas fa-wifi'></div> <div style='padding-left:3px'>Internet richiesto</div> </li> </ul>";
+            appLinks = "<ul style='padding: 0px!important; padding-left: 20px!important;'> <li> <a href='http://covid19app.altervista.org/index.html' target='_blank'>Sito web</a> </li> <li> <a href='http://covid19app.altervista.org/download.html' target='_blank'>Download</a> </li> </ul>";
+            break;
+    }
+    document.getElementById("app_project_title").innerHTML = appTitle;
+    document.getElementById("app_project_subtitle").innerHTML = appSubtitle;
+    document.getElementById("app_project_description").innerHTML = appDescription;
+    document.getElementById("app_project_authors").innerHTML = appAuthors;
+    document.getElementById("app_project_publisher").innerHTML = appPublisher;
+    document.getElementById("app_project_details").innerHTML = appDetails;
+    document.getElementById("app_project_links").innerHTML = appLinks;
+});
+
+/*
+
+PROTOTIPO
+
+case 0:
+            appTitle = "PRIVATEFLIX";
+            appSubtitle = "Data di rilascio: 2021 · Android (solo sorgente)";
+            appDescription = "<b>Simulazione dell'applicativo Netflix realizzato con Flutter</b><br/><br/>Codice open source utilizzabile per creare app personali non a scopo di lucro che simulino una libreria multimediale.<br/>L'app realizzabile risulta essere un media client per contenuti video hostati su piattaforme online (l'importante è i dati siano raggiungibili tramite URI, testato con Firebase).<br/><br/><b>Attenzione</b>: non mi ritengo responsabile circa l'uso illecito dell'app legato alla pirateria. Nelle immagini soprastanti sono mostrati film e serie tv al solo scopo di rendere l'idea di come l'applicazione visualizzi i contenuti multimediali.<br/><br/>Il codice è open source e non documentato siccome è un progetto personale realizzato just for fun in pochi giorni (sviluppato in 3 giorni) al fine di migliorare le mie competenze con Flutter. Ne è nata una vera e propria applicazione personalizzabile per godersi i propri contenuti. Può essere utilizzata anche per conservare i propri video su YouTube, creando una libreria che faccia da link manager.<br/><br/><b>Come funziona</b><br/>Privateflix gestisce i link ai propri contenuti multimediali, simulando il funzionamento dell'applicativo Plex e dell'applicativo Netflix circa la gestione dei contenuti. In sostanza, Privateflix non è altro che un link manager che effettua redirect su apposite piattaforme video (ad esempio YouTube) in base al contenuto selezionato. Tutti i dati inerenti ai contenuti multimediali vanno salvati in un apposito database NoSQL. Per maggiori informazioni circa le modifiche inerenti l'aspetto implementativo e la popolazione del database, consultare l'apposita pagina GitHub.";
+            appAuthors = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Francesco Abate</li></ul>";
+            appPublisher = "<ul style='padding: 0px!important; padding-left: 20px!important;'><li>Overriders Group</li></ul>";
+            appDetails = "<ul class='fa-ul mb-0' style='padding: 0px!important; margin-left: 24px!important;'> <li> <div class='fa-li fas fa-wifi'></div> <div style='padding-left:3px'>Internet richiesto</div> </li> <li> <div class='fa-li fas fa-sd-card'></div> <div style='padding-left:3px'>Accesso alla memoria</div> </li> </ul>";
+            appLinks = "<ul style='padding: 0px!important; padding-left: 20px!important;'> <li> <a href='https://github.com/frekkanzer2/Privateflix' target='_blank'>Codice sorgente</a> </li> </ul>";
+            break;
+
+*/
