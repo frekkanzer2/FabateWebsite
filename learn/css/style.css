@@ -1238,6 +1238,29 @@ h1, h2, h3, h4, h5,
     .course:hover h3 {
       color: #000; }
 
+@media (max-width: 991px) {
+  .course {
+    display: block;
+    padding: 20px 10px;
+    margin-bottom: 16px;
+    background: #f8f9fa;
+    color: #0779e4;
+    border-radius: 4px;
+    text-align: center; }
+  .subtitle{
+    font-size: 24px!important;
+    text-align: left!important;
+    padding-left: 4px;
+    padding-top: 20px;
+  }
+}
+
+.subtitle{
+  font-size: 24px!important;
+  text-align: right;
+  padding-right: 4px;
+}
+
 .custom-btn {
   font-size: 12px;
   font-weight: 700;

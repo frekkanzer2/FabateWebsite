@@ -787,6 +787,17 @@ h1, h2, h3, h4, h5,
         .site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
           padding-left: 15px !important; }
 
+@media (max-width: 991px) {
+  .course {
+    display: block;
+    padding: 20px 10px;
+    margin-bottom: 16px;
+    background: #f8f9fa;
+    color: #0779e4;
+    border-radius: 4px;
+    text-align: center; }
+}
+
 .sticky-wrapper {
   position: relative;
   z-index: 100;
