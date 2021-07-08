@@ -796,6 +796,18 @@ h1, h2, h3, h4, h5,
     color: #0779e4;
     border-radius: 4px;
     text-align: center; }
+  .subtitle{
+    font-size: 24px!important;
+    text-align: left!important;
+    padding-left: 4px;
+    padding-top: 20px;
+  }
+}
+
+.subtitle{
+  font-size: 24px!important;
+  text-align: right;
+  padding-right: 4px;
 }
 
 .sticky-wrapper {
